@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-97SJLVEHL0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-97SJLVEHL0');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="MeJqyh0dshEWYcRKJ1XJSEaQRg2UPhcyIf4J_q1TdyQ" />
+    
+    <!-- ★SEO対策 -->
+    <title>維持費0円のホームページ制作｜群馬県伊勢崎市・前橋・高崎｜AI Web Creator</title>
+    <meta name="description" content="群馬県伊勢崎市を拠点に、維持費永久0円で高品質なLP・ホームページを制作。AI技術活用で最短3日納品。Googleマップ集客（MEO）対応。栃木・埼玉・長野もオンライン対応可能です。">
+    <meta name="keywords" content="ホームページ制作,LP制作,伊勢崎,群馬,前橋,高崎,維持費0円,MEO対策,Web集客,AI">
+    
+    <!-- ★MEO対策：構造化データ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "AI Web Creator",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      "description": "群馬県伊勢崎市を拠点に、維持費0円のWeb資産構築とGoogleマップ集客支援を提供",
+      "priceRange": "¥60,000〜",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "伊勢崎市",
+        "addressRegion": "群馬県",
+        "addressCountry": "JP"
+      },
+      "areaServed": [
+        "伊勢崎市",
+        "前橋市",
+        "高崎市",
+        "群馬県",
+        "埼玉県",
+        "栃木県",
+        "長野県"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "松原 透"
+      },
+      "url": "https://your-website-url.com/"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { DEFAULT: '#0F172A', light: '#1E293B' },
+                        brandBlue: { DEFAULT: '#2563EB', dark: '#1D4ED8' },
+                        brandGold: { DEFAULT: '#F59E0B', light: '#FCD34D' },
+                        cta: { DEFAULT: '#EA580C', hover: '#C2410C' },
+                        line: { DEFAULT: '#06C755', hover: '#05B34C' },
+                        alert: { DEFAULT: '#EF4444', light: '#FEE2E2' }
+                    },
+                    fontFamily: { sans: ['"Noto Sans JP"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html { 
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px; 
+        }
+        .hero-gradient { background: linear-gradient(135deg, #0F172A 0%, #1E40AF 100%); }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #2563EB;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+        .radio-card:has(input:checked) {
+            background-color: #EFF6FF;
+            border-color: #2563EB;
+            color: #1E3A8A;
+        }
+        /* モーダル表示時のスタイル */
+        .modal-active {
+            display: flex !important;
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 antialiased bg-slate-50">
+
+    <!-- ヘッダー -->
+    <header class="fixed w-full z-50 bg-navy/95 backdrop-blur shadow-md text-white">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- ロゴ -->
+            <div class="text-xl md:text-2xl font-bold tracking-wider relative z-50">
+                <a href="#" class="flex items-center gap-2">
+                    <i class="fa-solid fa-robot text-brandGold"></i>
+                    AI Web Creator
+                </a>
+            </div>
+            
+            <!-- PC用ナビ -->
+            <nav class="hidden lg:flex gap-8 font-medium">
+                <a href="#services" class="hover:text-brandGold transition">料金・プラン</a>
+                <a href="#comparison" class="hover:text-brandGold transition">他社比較</a>
+                <a href="#contact" class="bg-brandGold text-navy px-5 py-2 rounded-full font-bold hover:bg-white transition shadow-lg">無料相談・見積もり</a>
+            </nav>
+
+            <!-- スマホ用ハンバーガーボタン -->
+            <button onclick="toggleMenu()" class="lg:hidden text-3xl relative z-[10000] focus:outline-none p-2 w-12 h-12 flex items-center justify-center">
+                <i id="menu-icon" class="fa-solid fa-bars transition-all duration-300"></i>
+            </button>
+            
+            <!-- スマホ用メニュー -->
+            <div id="mobile-menu" class="fixed inset-0 bg-navy z-[9999] flex flex-col items-center justify-center transition-all duration-300 opacity-0 pointer-events-none transform scale-95 origin-top-right">
+                <div class="flex flex-col items-center space-y-10">
+                    <a href="#services" onclick="toggleMenu()" class="text-2xl font-bold text-white hover:text-brandGold transition duration-300 py-2">料金・プラン</a>
+                    <a href="#comparison" onclick="toggleMenu()" class="text-2xl font-bold text-white hover:text-brandGold transition duration-300 py-2">他社比較</a>
+                    <a href="#contact" onclick="toggleMenu()" class="bg-brandGold text-navy px-10 py-4 rounded-full font-bold text-xl shadow-xl mt-4">無料相談・見積もり</a>
+                </div>
+                <div class="absolute bottom-4 text-navy text-xs pointer-events-none">
+                    <p>群馬・栃木・埼玉・長野 対応</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. ヒーローセクション -->
+    <section class="hero-gradient text-white pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center md:text-left animate-fade-in-up z-10">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-black leading-tight text-shadow">
+                    まだホームページに毎月<br>
+                    <span class="text-brandGold text-4xl md:text-6xl border-b-4 border-brandGold inline-block transform -rotate-1 mb-2">「家賃」</span>を<br>
+                    払い続けますか？
+                </h1>
+                <p class="text-xl md:text-2xl font-bold text-slate-200">
+                    群馬県唯一の<br class="md:hidden">「維持費永久0円」Web資産構築
+                </p>
+                <p class="text-sm md:text-base text-slate-300 leading-relaxed border-l-4 border-brandGold pl-4 bg-white/10 p-2 rounded">
+                    Googleマップ集客 × AI制作 × 広告運用。<br>
+                    伊勢崎市から北関東のビジネスを加速させる。<br>
+                    あなたのビジネスに「利益を残す資産」を作ります。
+                </p>
+                <div class="pt-6">
+                    <a href="#contact" class="inline-block bg-cta DEFAULT hover:bg-cta-hover text-white text-xl font-bold py-4 px-10 rounded-full shadow-xl transition transform hover:-translate-y-1 border-2 border-transparent hover:border-white/20">
+                        維持費0円の詳細を聞く <i class="fa-solid fa-arrow-down ml-2"></i>
+                    </a>
+                    <p class="text-xs text-slate-400 mt-2">※毎月5社限定 / 無理な営業は一切いたしません</p>
+                </div>
+            </div>
+            <div class="relative hidden md:block z-10">
+                <div class="absolute -inset-4 bg-brandBlue/30 rounded-xl blur-2xl"></div>
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Web Asset Building" class="relative rounded-xl shadow-2xl border-4 border-white/10 w-full transform rotate-2 hover:rotate-0 transition duration-700 object-cover h-[400px]">
+                
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-xl text-navy animate-bounce" style="animation-duration: 3s;">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-red-100 p-2 rounded-full text-red-600">
+                            <i class="fa-solid fa-ban text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-bold">Monthly Cost</p>
+                            <p class="text-xl font-black">管理費 ¥0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. 悩み共感セクション -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">こんな「Web制作の常識」に<br>疲れていませんか？</h2>
+                <div class="w-20 h-1 bg-brandGold mx-auto rounded"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-slate-100 p-8 rounded-xl relative hover:-translate-y-2 transition duration-300 border-t-4 border-slate-300">
+                    <div class="mt-2 text-center">
+                        <i class="fa-solid fa-file-invoice-dollar text-5xl text-slate-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3 text-slate-700">更新もしないのに<br>毎月1万円の管理費</h3>
+                        <p class="text-slate-600 text-sm">簡単な修正だけでも追加料金。5年リースで総額100万円以上払わされる。</p>
+                    </div>
+                </div>
+                <div class="bg-slate-100 p-8 rounded-xl relative hover:-translate-y-2 transition duration-300 border-t-4 border-slate-300">
+                    <div class="mt-2 text-center">
+                        <i class="fa-solid fa-ghost text-5xl text-slate-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3 text-slate-700">作って終わりで<br>誰も見に来ない</h3>
+                        <p class="text-slate-600 text-sm">「綺麗なサイト」はできたが、Googleマップにも出ず、問い合わせが来ない。</p>
+                    </div>
+                </div>
+                <div class="bg-slate-100 p-8 rounded-xl relative hover:-translate-y-2 transition duration-300 border-t-4 border-slate-300">
+                    <div class="mt-2 text-center">
+                        <i class="fa-solid fa-user-clock text-5xl text-slate-400 mb-4"></i>
+                        <h3 class="text-xl font-bold mb-3 text-slate-700">修正依頼をしても<br>対応が遅い</h3>
+                        <p class="text-slate-600 text-sm">担当者と連絡がつかない。対面の打ち合わせばかりで時間が奪われる。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <i class="fa-solid fa-caret-down text-5xl text-brandBlue animate-bounce"></i>
+            </div>
+            
+            <div class="bg-brandBlue/10 border-2 border-brandBlue rounded-2xl p-8 max-w-4xl mx-auto text-center shadow-inner mt-6">
+                <h3 class="text-2xl md:text-3xl font-bold text-brandBlue-dark mb-2">
+                    AI技術 × Webマーケティングで<br>その「業界の常識」を破壊しました
+                </h3>
+                <p class="text-slate-700 font-medium">
+                    無駄な固定費（家賃）をゼロにし、Googleマップと連動した「集客できる資産（持ち家）」を提供します。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 新・料金プランセクション -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="text-brandBlue font-bold tracking-widest uppercase">Price & Plan</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mt-2">料金・プラン</h2>
+                <p class="text-slate-600 mt-4">維持費0円。必要な機能を選べる、無駄のない構成です。</p>
+            </div>
+
+            <!-- メインプラン 2カラム -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+                
+                <!-- 1. LP制作プラン（メイン・モニター） -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-4 border-alert relative transform hover:-translate-y-1 transition duration-300 flex flex-col">
+                    <!-- バッジ -->
+                    <div class="absolute top-0 right-0 bg-alert text-white text-xs font-bold px-3 py-1 rounded-bl-lg z-10 shadow-sm">
+                        先着5名様限定(残り4枠)
+                    </div>
+                    <div class="bg-navy p-6 text-center text-white relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brandGold to-brandBlue"></div>
+                        <h3 class="text-xl font-bold mb-1">1ページ完結 LP制作プラン</h3>
+                        <p class="text-sm opacity-90">スマホ集客に特化した「売れる」デザイン</p>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-center mb-6" id="lp-price-container">
+                            <p class="text-slate-400 text-sm font-bold line-through">通常価格 60,000円</p>
+                            <div class="text-alert font-black text-4xl mt-1 tracking-tight">
+                                30,000<span class="text-lg text-slate-700 font-medium">円(税抜)</span>
+                            </div>
+                            <p class="text-xs text-alert font-bold mt-2 bg-red-50 inline-block px-3 py-1 rounded-full border border-alert/20">数量限定価格</p>
+                        </div>
+                        <ul class="space-y-4 text-slate-600 mb-8 flex-1">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandGold mr-2"></i>スマホ特化デザイン</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandGold mr-2"></i><span class="font-bold text-navy">サーバー維持費 永年0円</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandGold mr-2"></i>予約機能連携</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandGold mr-2"></i>最短3日でスピード納品</li>
+                        </ul>
+                        <div>
+                            <button onclick="openModal('lp-modal')" class="block w-full bg-alert hover:bg-red-600 text-white font-bold text-center py-4 rounded-lg shadow-md transition transform active:scale-95">
+                                詳細を見る
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. 店舗HP制作プラン -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 relative transform hover:-translate-y-1 transition duration-300 flex flex-col">
+                    <div class="bg-brandBlue p-6 text-center text-white relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brandGold to-white"></div>
+                        <h3 class="text-xl font-bold mb-1">3ページ構成 店舗HP制作プラン</h3>
+                        <p class="text-sm opacity-90">信頼性を重視する店舗様向け</p>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-center mb-6">
+                            <p class="text-slate-400 text-sm font-bold h-6"></p> <!-- スペーサー -->
+                            <div class="text-navy font-black text-4xl mt-1 tracking-tight">
+                                100,000<span class="text-lg text-slate-700 font-medium">円(税抜)</span>
+                            </div>
+                            <p class="text-xs text-slate-500 font-bold mt-2 inline-block px-3 py-1 bg-slate-100 rounded-full">本格的な公式サイト構築</p>
+                        </div>
+                        <ul class="space-y-4 text-slate-600 mb-8 flex-1">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandBlue mr-2"></i>トップ＋メニュー＋店舗案内</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandBlue mr-2"></i>ブランディング重視</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandBlue mr-2"></i><span class="font-bold text-navy">サーバー維持費 永年0円</span></li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandBlue mr-2"></i>お問い合わせフォーム設置</li>
+                        </ul>
+                        <div>
+                            <button onclick="openModal('hp-modal')" class="block w-full bg-brandBlue hover:bg-blue-700 text-white font-bold text-center py-4 rounded-lg shadow-md transition transform active:scale-95">
+                                詳細を見る
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. オプション・セット割エリア -->
+            <div class="max-w-4xl mx-auto">
+                <h3 class="text-2xl font-bold text-navy text-center mb-8 flex items-center justify-center">
+                    <i class="fa-solid fa-plus-circle text-brandGold mr-2 text-3xl"></i>選べる追加オプション
+                </h3>
+                
+                <!-- 単体オプション -->
+                <div class="flex flex-col sm:flex-row gap-4 mb-10 justify-center">
+                    <div class="bg-white p-5 rounded-xl shadow border border-slate-200 flex-1 text-center hover:shadow-md transition">
+                        <i class="fa-brands fa-google text-red-500 text-4xl mb-3"></i>
+                        <h4 class="font-bold text-lg mb-1 text-navy">Googleビジネスプロフィール<br>登録代行</h4>
+                        <p class="text-slate-600 font-bold">10,000円<span class="text-xs font-normal">（税抜）</span></p>
+                        <p class="text-xs text-slate-400 mt-2">MEO対策の第一歩</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-xl shadow border border-slate-200 flex-1 text-center hover:shadow-md transition">
+                        <i class="fa-brands fa-line text-green-500 text-4xl mb-3"></i>
+                        <h4 class="font-bold text-lg mb-1 text-navy">公式LINEアカウント<br>構築代行</h4>
+                        <p class="text-slate-600 font-bold">10,000円<span class="text-xs font-normal">（税抜）</span></p>
+                        <p class="text-xs text-slate-400 mt-2">リピーター獲得の必須ツール</p>
+                    </div>
+                </div>
+
+                <!-- おすすめセットエリア -->
+                <div class="space-y-8">
+                    <!-- セットA -->
+                    <div class="bg-blue-50 border-2 border-brandBlue/30 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm" id="set-a-container">
+                        <div class="text-center md:text-left flex-1">
+                            <span class="bg-brandBlue text-white text-xs font-bold px-3 py-1 rounded-full mb-3 inline-block">人気No.1 集客スタートセット</span>
+                            <h4 class="text-xl md:text-2xl font-bold text-navy mb-2">LP制作 + どちらか1つ<span class="text-base font-normal ml-2 hidden md:inline">（Google or LINE）</span></h4>
+                            <p class="text-sm text-slate-600">通常69,800円 → 数量限定価格</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-xs text-slate-400 font-bold line-through mb-1">通常 69,800円</p>
+                            <div class="text-3xl md:text-4xl font-black text-brandBlue tracking-tight">39,800<span class="text-sm font-medium text-slate-600 ml-1">円(税抜)</span></div>
+                            <p class="text-xs text-alert font-bold mt-1">数量限定</p>
+                        </div>
+                    </div>
+
+                    <!-- セットB (最強) -->
+                    <div class="bg-gradient-to-r from-yellow-50 via-orange-50 to-yellow-50 border-4 border-brandGold rounded-2xl p-8 md:p-10 shadow-xl relative overflow-hidden transform transition hover:scale-[1.01] group">
+                        <!-- 装飾 -->
+                        <div class="absolute top-0 right-0 bg-brandGold text-white font-bold px-6 py-2 rounded-bl-xl shadow-md z-10 text-sm md:text-base">最強・全部入り</div>
+                        <div class="absolute -inset-1 bg-white/30 blur-xl group-hover:bg-white/10 transition duration-500"></div>
+                        
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10" id="set-b-container">
+                            <div class="text-center md:text-left flex-1">
+                                <h4 class="text-2xl md:text-3xl font-black text-navy mb-3 flex items-center justify-center md:justify-start gap-2">
+                                    <i class="fa-solid fa-crown text-brandGold text-3xl"></i>店舗DXフルセット
+                                </h4>
+                                <p class="text-slate-700 font-bold mb-2 text-lg">LP制作 + Google + LINE <span class="text-alert underline decoration-4 decoration-yellow-300">全部追加！</span></p>
+                                <p class="text-sm text-slate-600">通常79,800円 → 数量限定価格</p>
+                            </div>
+                            
+                            <div class="text-center bg-white/90 p-5 rounded-xl shadow-sm border-2 border-brandGold w-full md:w-auto min-w-[280px]">
+                                <p class="text-xs text-alert font-bold mb-1">迷ったらコレ！開店準備がすべて整います</p>
+                                <p class="text-xs text-slate-400 font-bold line-through mb-1">通常 79,800円</p>
+                                <div class="text-4xl md:text-5xl font-black text-cta tracking-tighter">
+                                    49,800<span class="text-lg font-medium text-slate-700 ml-1">円(税抜)</span>
+                                </div>
+                                <p class="text-xs text-alert font-bold mt-1">数量限定</p>
+                                <a href="#contact" class="inline-block mt-4 w-full bg-cta hover:bg-orange-700 text-white font-bold px-6 py-3 rounded-full text-base transition shadow-md transform active:scale-95">
+                                    フルセットで相談する
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 比較表 -->
+    <section id="comparison" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mb-4">5年間のコスト比較</h2>
+                <p class="text-slate-600 mb-2">ホームページは「作る費用」より「維持する費用」が問題です。</p>
+                <div class="w-20 h-1 bg-brandGold mx-auto rounded"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <!-- 【PC用テーブル】 -->
+                <div class="hidden md:block overflow-hidden shadow-xl rounded-xl border border-slate-200">
+                    <table class="w-full text-left border-collapse bg-white">
+                        <thead>
+                            <tr>
+                                <th class="p-6 bg-slate-100 text-slate-600 font-bold border-b border-r border-slate-300 text-center w-1/4">比較項目</th>
+                                <th class="p-6 bg-slate-50 text-slate-600 font-bold border-b border-r border-slate-300 text-center w-1/3">一般的な制作会社<br><span class="text-xs font-normal">(リース・月額管理型)</span></th>
+                                <th class="p-6 bg-navy text-white font-bold border-b text-center text-xl w-1/3 relative shadow-inner">
+                                    当サービス
+                                    <span class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-brandGold text-navy text-sm px-3 py-1 rounded-full font-black shadow-lg border-2 border-white whitespace-nowrap">圧倒的!</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-5 border-b border-r border-slate-200 text-center font-bold text-slate-700 bg-slate-50/50">初期制作費</td>
+                                <td class="p-5 border-b border-r border-slate-200 text-center text-slate-500">20万円〜<br><span class="text-xs">(または0円でリース契約)</span></td>
+                                <td id="comparison-price-cell-pc" class="p-5 border-b text-center font-bold text-brandBlue bg-blue-50/30">
+                                    <div class="text-xl text-alert font-black">LP：6万円〜</div>
+                                    <div class="text-base text-slate-600 mt-1">HP：10万円〜</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 border-b border-r border-slate-200 text-center font-bold text-slate-700 bg-slate-50/50">月額管理費</td>
+                                <td class="p-5 border-b border-r border-slate-200 text-center text-slate-500">10,000円〜<br><span class="text-xs">(5年間払い続ける)</span></td>
+                                <td class="p-5 border-b text-center font-bold text-brandBlue text-xl bg-blue-50/30">永久 0円</td>
+                            </tr>
+                            <!-- 5年間のトータルコスト -->
+                            <tr>
+                                <td class="p-5 border-b border-r border-slate-200 text-center font-bold text-slate-700 bg-yellow-50">5年間の総額</td>
+                                <td class="p-5 border-b border-r border-slate-200 text-center text-slate-500 bg-slate-50">
+                                    <span class="line-through">80万円以上</span>
+                                    <br><span class="text-xs text-red-500">※リース契約は解約不可</span>
+                                </td>
+                                <td class="p-5 border-b text-center font-black text-alert text-2xl bg-yellow-100 border-2 border-brandGold">
+                                    初期費用のみ
+                                    <p class="text-xs text-navy mt-1 font-bold">維持費ゼロ＝利益が残る</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-5 border-r border-slate-200 text-center font-bold text-slate-700 bg-slate-50/50">所有権</td>
+                                <td class="p-5 border-r border-slate-200 text-center text-slate-500">リース切れで消滅<br><span class="text-xs">(自分のものにならない)</span></td>
+                                <td class="p-5 text-center font-bold text-brandBlue bg-blue-50/30">あなたの資産</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 【スマホ用カードリスト】 -->
+                <div class="md:hidden space-y-4">
+                    <!-- 初期制作費 -->
+                    <div class="bg-white p-5 rounded-xl shadow-lg border border-slate-100">
+                        <h3 class="text-center font-bold text-slate-700 mb-4 border-b pb-2">初期制作費</h3>
+                        <div class="flex justify-between items-center gap-2">
+                            <div class="w-1/2 text-center">
+                                <p class="text-xs text-slate-500 mb-1">他社</p>
+                                <p class="text-slate-500 font-medium">20万円〜</p>
+                            </div>
+                            <div class="text-slate-300 font-bold text-sm">vs</div>
+                            <div class="w-1/2 text-center bg-blue-50 rounded-lg p-2 border-2 border-brandBlue relative">
+                                <span class="absolute -top-3 right-0 bg-brandGold text-navy text-[10px] px-2 py-0.5 rounded-full font-bold shadow">推</span>
+                                <p class="text-xs text-brandBlue font-bold mb-1">当サービス</p>
+                                <div id="comparison-price-cell-mobile" class="font-black text-brandBlue text-sm">
+                                    <span class="text-alert text-lg">LP：6万円〜</span><br>
+                                    HP：10万円〜
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 月額管理費 -->
+                    <div class="bg-white p-5 rounded-xl shadow-lg border border-slate-100">
+                        <h3 class="text-center font-bold text-slate-700 mb-4 border-b pb-2">月額管理費</h3>
+                        <div class="flex justify-between items-center gap-2">
+                            <div class="w-1/2 text-center">
+                                <p class="text-xs text-slate-500 mb-1">他社</p>
+                                <p class="text-slate-500 font-medium">10,000円/月</p>
+                            </div>
+                            <div class="text-slate-300 font-bold text-sm">vs</div>
+                            <div class="w-1/2 text-center bg-blue-50 rounded-lg p-2 border-2 border-brandBlue relative">
+                                <p class="text-xs text-brandBlue font-bold mb-1">当サービス</p>
+                                <p class="text-lg font-black text-brandBlue">永久 0円</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5年間の総額 -->
+                    <div class="bg-yellow-50 p-5 rounded-xl shadow-lg border-2 border-brandGold">
+                        <h3 class="text-center font-bold text-slate-700 mb-4 border-b border-brandGold/30 pb-2">5年間の支払い総額</h3>
+                        <div class="flex justify-between items-center gap-2">
+                            <div class="w-1/2 text-center">
+                                <p class="text-xs text-slate-500 mb-1">他社(リース)</p>
+                                <p class="text-slate-500 font-medium line-through">80万円以上</p>
+                            </div>
+                            <div class="text-brandGold font-bold text-sm">vs</div>
+                            <div class="w-1/2 text-center bg-white rounded-lg p-2 border-2 border-alert relative shadow">
+                                <p class="text-xs text-alert font-bold mb-1">当サービス</p>
+                                <p class="text-lg font-black text-alert">初期費用のみ</p>
+                            </div>
+                        </div>
+                        <p class="text-center text-xs text-navy mt-3 font-bold">→ 浮いたお金を広告費に回せます</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- プロフィール -->
+    <section class="py-20 bg-white border-t border-slate-100">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="w-40 h-40 flex-shrink-0 relative flex items-center justify-center bg-gradient-to-br from-navy to-brandBlue rounded-full shadow-xl border-4 border-slate-50 text-white">
+                    <span class="text-5xl font-black tracking-widest opacity-90">TM</span>
+                    <div class="absolute bottom-0 right-0 bg-white text-brandBlue w-12 h-12 rounded-full flex items-center justify-center shadow-md border-2 border-slate-50"><i class="fa-solid fa-robot text-xl"></i></div>
+                </div>
+                <div class="text-center md:text-left">
+                    <p class="text-brandBlue font-bold tracking-wide text-sm mb-1">地方ビジネス専門 AIマーケター</p>
+                    <h3 class="text-2xl font-bold text-navy mb-4">松原 透（まつばら とおる）</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        「Webサイトは家賃ではなく、資産であるべき」という信念のもと、AI技術を駆使して地方中小企業の固定費削減と集客を支援しています。
+                        群馬県伊勢崎市を拠点に、前橋・高崎をはじめ、オンラインで北関東（埼玉・栃木・長野）のビジネスオーナー様の利益最大化に貢献します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ & LINEセクション -->
+    <section id="contact" class="py-24 bg-navy relative overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1500&q=80" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-br from-navy via-navy to-brandBlue/50 opacity-90 z-0"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-alert text-white font-bold px-4 py-1 rounded-full mb-4 animate-bounce">
+                    毎月5社限定受付
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">お問い合わせ・ご相談</h2>
+                <p class="text-slate-300 text-sm md:text-base">
+                    しつこい営業は一切いたしません。<br>
+                    群馬県全域はもちろん、埼玉・栃木・長野の経営者様もオンラインで完全対応。<br>
+                    今月の枠が埋まる前に、お早めにご相談ください。
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12 max-w-3xl mx-auto transform transition duration-500">
+                
+                <!-- フォームエリア -->
+                <form action="https://formspree.io/f/mjkneokj" method="POST" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="name" class="block text-sm font-bold text-slate-700">お名前 <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="山田 太郎" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brandBlue focus:ring-2 focus:ring-brandBlue/20 transition duration-200">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="email" class="block text-sm font-bold text-slate-700">メールアドレス <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="example@gmail.com" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brandBlue focus:ring-2 focus:ring-brandBlue/20 transition duration-200">
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <label class="block text-sm font-bold text-slate-700 mb-2">ご相談内容 <span class="text-red-500">*</span></label>
+                        <label class="radio-card flex items-center p-4 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition">
+                            <input type="radio" name="inquiry_type" value="estimate" required class="w-5 h-5 text-brandBlue focus:ring-brandBlue border-gray-300">
+                            <div class="ml-3"><span class="block font-bold text-slate-700">まずは概算の見積もりが知りたい</span><span class="block text-xs text-slate-500">まだ依頼は未定だが、費用感を知りたい方</span></div>
+                        </label>
+                        <label class="radio-card flex items-center p-4 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition">
+                            <input type="radio" name="inquiry_type" value="consult" class="w-5 h-5 text-brandBlue focus:ring-brandBlue border-gray-300">
+                            <div class="ml-3"><span class="block font-bold text-slate-700">まずは話だけ聞いてみたい</span><span class="block text-xs text-slate-500">Zoomやチャットで、悩みや要望を相談したい方</span></div>
+                        </label>
+                        <label class="radio-card flex items-center p-4 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition">
+                            <input type="radio" name="inquiry_type" value="request" class="w-5 h-5 text-brandBlue focus:ring-brandBlue border-gray-300">
+                            <div class="ml-3"><span class="block font-bold text-slate-700">制作・運用を依頼したい</span><span class="block text-xs text-slate-500">具体的な依頼内容がお決まりの方</span></div>
+                        </label>
+                        <label class="radio-card flex items-center p-4 border border-slate-200 rounded-lg cursor-pointer hover:bg-slate-50 transition">
+                            <input type="radio" name="inquiry_type" value="other" class="w-5 h-5 text-brandBlue focus:ring-brandBlue border-gray-300">
+                            <span class="ml-3 font-bold text-slate-700">その他・ご質問</span>
+                        </label>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="message" class="block text-sm font-bold text-slate-700">詳細・メッセージ</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="（入力例）&#13;&#10;・現在のサイトURL（あれば）&#13;&#10;・希望するイメージや参考サイト&#13;&#10;・予算感&#13;&#10;&#13;&#10;※「ホームページ制作」の方は、会社概要・サービス詳細など入れたいページ構成を簡単にお書きください。" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-brandBlue focus:ring-2 focus:ring-brandBlue/20 transition duration-200"></textarea>
+                    </div>
+
+                    <div class="text-center pt-4">
+                        <button type="submit" class="w-full md:w-auto inline-flex justify-center items-center bg-cta DEFAULT hover:bg-cta-hover text-white text-lg font-bold py-4 px-12 rounded-full shadow-lg transition transform hover:-translate-y-1">
+                            <i class="fa-regular fa-paper-plane mr-2"></i> 送信する
+                        </button>
+                    </div>
+                </form>
+
+                <!-- LINE誘導エリア（修正済み） -->
+                <div class="mt-12 pt-10 border-t-2 border-slate-100 text-center">
+                    <h3 class="text-xl font-bold text-slate-700 mb-6">LINEでのお問い合わせも可能です</h3>
+                    <div class="flex justify-center">
+                        <!-- ボタンをクリックでモーダルを開く -->
+                        <button onclick="handleLineEntry()" class="inline-flex justify-center items-center bg-line hover:bg-line-hover text-white font-bold py-4 px-12 rounded-full transition shadow-lg w-full md:w-auto transform hover:scale-105 cursor-pointer">
+                            <i class="fa-brands fa-line text-3xl mr-3"></i> LINEで相談する
+                        </button>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-3">※タップするとLINEが開きます</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-navy-light text-slate-400 py-8 border-t border-slate-700">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2024 AI Web Creator (Toru Matsubara). All Rights Reserved.</p>
+            <p class="text-sm mt-2">
+                <a href="law.html" class="hover:text-brandGold transition underline">特定商取引法に基づく表記</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- LINEモーダル（QRコード表示用） -->
+    <div id="line-modal" class="fixed inset-0 z-[99999] hidden items-center justify-center bg-gray-900 bg-opacity-75 transition-opacity" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="bg-white rounded-lg text-center overflow-hidden shadow-xl transform transition-all sm:max-w-sm w-full p-6 relative m-4">
+            <h3 class="text-xl leading-6 font-bold text-navy mb-4">LINEで友だち追加</h3>
+            
+            <!-- 公式QRコード画像 -->
+            <div class="mb-4">
+                <img src="https://qr-official.line.me/gs/M_685wdcty_BW.png?oat_content=qr" alt="LINE公式アカウントQRコード" class="mx-auto w-48 h-48 border border-slate-200 rounded">
+            </div>
+            
+            <!-- PC用リンクボタン -->
+            <a id="line-app-btn" href="#" target="_blank" class="w-full inline-flex justify-center items-center bg-line hover:bg-line-hover text-white font-bold py-3 px-4 rounded-lg transition shadow mb-3">
+                LINEアプリを開く
+            </a>
+            
+            <button type="button" onclick="closeModal('line-modal')" class="mt-2 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none sm:text-sm cursor-pointer">
+                閉じる
+            </button>
+        </div>
+    </div>
+
+    <!-- 各種サービス詳細モーダル -->
+    <div id="lp-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" onclick="closeModal('lp-modal')"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <h3 class="text-xl leading-6 font-bold text-navy mb-4 border-b pb-2"><i class="fa-solid fa-robot text-brandGold mr-2"></i>LP制作の詳細</h3>
+                    <div class="space-y-4 text-sm text-slate-600">
+                        <p class="font-bold text-brandBlue">広告の受け皿として「売る」ことに特化</p>
+                        <p>通常、人間が1週間かけて考える構成や文章を、生成AIとマーケターの知見を組み合わせて数時間で作成します。</p>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><strong>文章作成：</strong>「売れる」構成案をAIが瞬時に提案</li>
+                            <li><strong>画像生成：</strong>著作権フリーの高品質画像をAI生成</li>
+                            <li><strong>コード生成：</strong>HTML/CSSの骨組みをAIが高速記述</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse gap-2">
+                    <button type="button" onclick="closeModal('lp-modal'); document.getElementById('contact').scrollIntoView();" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-brandGold text-base font-medium text-navy hover:bg-brandGold-light focus:outline-none sm:ml-3 sm:w-auto sm:text-sm cursor-pointer">相談する</button>
+                    <button type="button" onclick="closeModal('lp-modal')" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm cursor-pointer">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hp-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" onclick="closeModal('hp-modal')"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <h3 class="text-xl leading-6 font-bold text-navy mb-4 border-b pb-2"><i class="fa-solid fa-sitemap text-brandGold mr-2"></i>ホームページ制作プラン</h3>
+                    <div class="space-y-4 text-sm text-slate-600">
+                        <p class="font-bold text-brandBlue">Googleマップからの信頼獲得に最適</p>
+                        <p>「とりあえず公式HPが欲しい」というニーズに応える、無駄を削ぎ落とした1ページ完結型（シングルページ）も可能です。</p>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><strong>基本構成：</strong>トップ・会社概要・サービス詳細（計3Pまで5万円）</li>
+                            <li><strong>1ページ完結型：</strong>上記を1ページにまとめることも可能（より見やすく、安価に）</li>
+                        </ul>
+                        <div class="bg-slate-50 p-3 rounded mt-3">
+                            <p class="font-bold text-navy mb-1">ページ追加オプション</p>
+                            <p>3ページを超える場合、1ページにつき +10,000円〜で対応可能です。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse gap-2">
+                    <button type="button" onclick="closeModal('hp-modal'); document.getElementById('contact').scrollIntoView();" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-brandGold text-base font-medium text-navy hover:bg-brandGold-light focus:outline-none sm:ml-3 sm:w-auto sm:text-sm cursor-pointer">相談する</button>
+                    <button type="button" onclick="closeModal('hp-modal')" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm cursor-pointer">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS制御 -->
+    <script>
+        // ==========================================
+        // 【設定エリア】
+        // 1. 残りの人数
+        const REMAINING_SPOTS = 4; // 残り4名
+        
+        // 2. 公式LINEのURL (ここを書き換えてください！)
+        const LINE_URL = "https://lin.ee/SyyT1EP"; 
+        // ==========================================
+
+        // LINEボタンの挙動制御
+        function handleLineEntry() {
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            
+            if (isMobile) {
+                // スマホ：直接LINEアプリ起動
+                window.location.href = LINE_URL;
+            } else {
+                // PC：QRコードモーダル表示
+                const modal = document.getElementById('line-modal');
+                if (modal) {
+                    modal.classList.remove('hidden');
+                    modal.classList.add('modal-active'); // flex表示用クラス
+                    
+                    // モーダル内のボタンにURLセット
+                    const btn = document.getElementById('line-app-btn');
+                    if (btn) btn.href = LINE_URL;
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            updatePriceDisplay();
+        });
+
+        function updatePriceDisplay() {
+            const comparisonPriceCellPC = document.getElementById('comparison-price-cell-pc');
+            const comparisonPriceCellMobile = document.getElementById('comparison-price-cell-mobile');
+
+            // LP料金は常に6万円で表示
+            if(comparisonPriceCellPC) {
+                comparisonPriceCellPC.innerHTML = `
+                    <div class="text-xl text-alert font-black">LP：6万円〜</div>
+                    <div class="text-base text-slate-600 mt-1">HP：10万円〜</div>
+                `;
+            }
+            if(comparisonPriceCellMobile) {
+                comparisonPriceCellMobile.innerHTML = `
+                    <span class="text-alert text-lg">LP：6万円〜</span><br>
+                    HP：10万円〜
+                `;
+            }
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            if (menu.classList.contains('opacity-0')) {
+                menu.classList.remove('opacity-0', 'pointer-events-none', 'scale-95');
+                menu.classList.add('opacity-100', 'pointer-events-auto', 'scale-100');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.remove('opacity-100', 'pointer-events-auto', 'scale-100');
+                menu.classList.add('opacity-0', 'pointer-events-none', 'scale-95');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        function openModal(id) { 
+            const el = document.getElementById(id);
+            if(el) {
+                el.classList.remove('hidden');
+                if(id === 'line-modal') el.classList.add('modal-active');
+            }
+        }
+        function closeModal(id) { 
+            const el = document.getElementById(id);
+            if(el) {
+                el.classList.add('hidden');
+                if(id === 'line-modal') el.classList.remove('modal-active');
+            }
+        }
+    </script>
+</body>
+</html>
