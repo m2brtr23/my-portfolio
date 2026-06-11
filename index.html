@@ -257,8 +257,8 @@
                 </p>
             </div>
 
-            <!-- メインプラン 2カラム -->
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+            <!-- メインプラン 3カラム -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
                 
                 <!-- 1. LP制作プラン（メイン・モニター） -->
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden border-4 border-alert relative transform hover:-translate-y-1 transition duration-300 flex flex-col">
@@ -293,12 +293,12 @@
                     </div>
                 </div>
 
-                <!-- 2. 店舗HP制作プラン -->
+                <!-- 2. HP制作プラン -->
                 <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 relative transform hover:-translate-y-1 transition duration-300 flex flex-col">
                     <div class="bg-brandBlue p-6 text-center text-white relative overflow-hidden">
                         <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brandGold to-white"></div>
-                        <h3 class="text-xl font-bold mb-1">3ページ構成 店舗HP制作プラン</h3>
-                        <p class="text-sm opacity-90">信頼性を重視する店舗様向け</p>
+                        <h3 class="text-xl font-bold mb-1">3ページ構成 HP制作プラン</h3>
+                        <p class="text-sm opacity-90">信頼性を重視した公式サイト構築</p>
                     </div>
                     <div class="p-8 flex-1 flex flex-col">
                         <div class="text-center mb-6">
@@ -309,13 +309,42 @@
                             <p class="text-xs text-slate-500 font-bold mt-2 inline-block px-3 py-1 bg-slate-100 rounded-full">本格的な公式サイト構築</p>
                         </div>
                         <ul class="space-y-4 text-slate-600 mb-8 flex-1">
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandBlue mr-2"></i>トップ＋メニュー＋店舗案内</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandBlue mr-2"></i>トップ＋サービス＋会社案内</li>
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandBlue mr-2"></i>ブランディング重視</li>
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandBlue mr-2"></i><span class="font-bold text-navy">サーバー維持費 永年0円</span></li>
                             <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandBlue mr-2"></i>お問い合わせフォーム設置</li>
                         </ul>
                         <div>
                             <button onclick="openModal('hp-modal')" class="block w-full bg-brandBlue hover:bg-blue-700 text-white font-bold text-center py-4 rounded-lg shadow-md transition transform active:scale-95">
+                                詳細を見る
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. 広告運用プラン -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 relative transform hover:-translate-y-1 transition duration-300 flex flex-col md:col-span-2 lg:col-span-1">
+                    <div class="bg-navy p-6 text-center text-white relative overflow-hidden">
+                        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brandGold to-brandBlue"></div>
+                        <h3 class="text-xl font-bold mb-1">広告運用プラン</h3>
+                        <p class="text-sm opacity-90">LPと連動したWeb広告の運用代行</p>
+                    </div>
+                    <div class="p-8 flex-1 flex flex-col">
+                        <div class="text-center mb-6">
+                            <p class="text-slate-400 text-sm font-bold h-6"></p> <!-- スペーサー -->
+                            <div class="text-navy font-black text-4xl mt-1 tracking-tight">
+                                30,000<span class="text-lg text-slate-700 font-medium">円/月(税込)</span>
+                            </div>
+                            <p class="text-xs text-slate-500 font-bold mt-2 inline-block px-3 py-1 bg-slate-100 rounded-full">運用代行費（広告費は別途実費）</p>
+                        </div>
+                        <ul class="space-y-4 text-slate-600 mb-8 flex-1">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandGold mr-2"></i>Google広告・Meta広告運用</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandGold mr-2"></i>月次レポート＆改善提案</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandGold mr-2"></i>LP・サイトとの連携設計</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-brandGold mr-2"></i>キーワード・ターゲット最適化</li>
+                        </ul>
+                        <div>
+                            <button onclick="openModal('ad-modal')" class="block w-full bg-navy hover:bg-navy-light text-white font-bold text-center py-4 rounded-lg shadow-md transition transform active:scale-95">
                                 詳細を見る
                             </button>
                         </div>
@@ -679,6 +708,33 @@
                 <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse gap-2">
                     <button type="button" onclick="closeModal('lp-modal'); document.getElementById('contact').scrollIntoView();" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-brandGold text-base font-medium text-navy hover:bg-brandGold-light focus:outline-none sm:ml-3 sm:w-auto sm:text-sm cursor-pointer">相談する</button>
                     <button type="button" onclick="closeModal('lp-modal')" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm cursor-pointer">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 bg-gray-900 bg-opacity-75 transition-opacity" onclick="closeModal('ad-modal')"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+            <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg w-full">
+                <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                    <h3 class="text-xl leading-6 font-bold text-navy mb-4 border-b pb-2"><i class="fa-solid fa-bullhorn text-brandGold mr-2"></i>広告運用プランの詳細</h3>
+                    <div class="space-y-4 text-sm text-slate-600">
+                        <p class="font-bold text-brandBlue">作ったサイト・LPを「売れる仕組み」に育てます</p>
+                        <p>Google広告やMeta広告（Instagram/Facebook）の運用を代行。LP制作プランと組み合わせることで、集客から成約まで一気通貫でサポートします。</p>
+                        <ul class="list-disc pl-5 space-y-1">
+                            <li><strong>運用代行費：</strong>月額30,000円（税込）〜</li>
+                            <li><strong>広告費：</strong>実費（ご予算に応じて設定・別途）</li>
+                            <li><strong>レポート：</strong>毎月の成果報告と改善提案</li>
+                            <li><strong>連携設計：</strong>LP・サイトとの導線最適化</li>
+                        </ul>
+                        <p class="text-xs text-slate-500 border-t border-slate-100 pt-3 mt-3">広告費の目安や運用媒体は、業種・エリア・目的に応じてご相談ください。最低契約期間などの詳細もお気軽にお問い合わせください。</p>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse gap-2">
+                    <button type="button" onclick="closeModal('ad-modal'); document.getElementById('contact').scrollIntoView();" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-brandGold text-base font-medium text-navy hover:bg-brandGold-light focus:outline-none sm:ml-3 sm:w-auto sm:text-sm cursor-pointer">相談する</button>
+                    <button type="button" onclick="closeModal('ad-modal')" class="mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm cursor-pointer">閉じる</button>
                 </div>
             </div>
         </div>
